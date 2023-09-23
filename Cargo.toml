@@ -1,0 +1,8 @@
+
+[workspace]
+members = [
+	'./rust/berkelium_binary',
+]
+
+[profile.release]
+lto = true
