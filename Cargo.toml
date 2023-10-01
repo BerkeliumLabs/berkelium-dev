@@ -5,4 +5,9 @@ members = [
 ]
 
 [profile.release]
+# Tell `rustc` to optimize for small code size.
+# "s" for small size | "z" for small size with speed cost
+# opt-level = "z"
+
+# optimize for speed
 lto = true
