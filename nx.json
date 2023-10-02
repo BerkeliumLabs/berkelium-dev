@@ -12,6 +12,7 @@
       }
     }
   },
+  "neverConnectToCloud": true,
   "targetDefaults": {
     "build": {
       "dependsOn": ["^build"],
@@ -43,5 +44,5 @@
     ],
     "sharedGlobals": []
   },
-  "plugins": ["@monodon/rust"]
+  "plugins": []
 }
