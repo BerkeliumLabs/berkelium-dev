@@ -4,12 +4,15 @@
   "license": "MIT",
   "scripts": {
     "build:lib": "nx build berkelium",
-    "build:wasm": "wasm-pack build ./rust/berkelium_binary",
-    "test": "nx test berkelium"
+    "build:wasm": "wasm-pack build --out-dir node_modules/@berkelium/core --target nodejs",
+    "test:dev": "nx test berkelium",
+    "test": "npm run build:wasm && npm run test:dev"
   },
   "private": true,
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "vite-plugin-top-level-await": "^1.3.1",
+    "vite-plugin-wasm": "^3.2.2"
   },
   "devDependencies": {
     "@nx/eslint-plugin": "16.9.0",

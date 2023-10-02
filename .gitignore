@@ -41,3 +41,9 @@ Thumbs.db
 # Other
 package-lock.json
 desktop.ini
+
+# Added by cargo
+
+/target
+/Cargo.lock
+/pkg
