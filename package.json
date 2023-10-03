@@ -4,12 +4,13 @@
   "license": "MIT",
   "scripts": {
     "build:lib": "nx build berkelium",
-    "build:wasm": "wasm-pack build --out-dir node_modules/@berkelium/core --target bundler",
+    "build:wasm": "wasm-pack build --out-dir berkelium/src/core --target web",
     "test:dev": "npm run build:wasm && npm run test",
     "test": "nx test berkelium"
   },
   "private": true,
   "dependencies": {
+    "@swc/helpers": "~0.5.2",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
@@ -17,7 +18,14 @@
     "@nx/jest": "16.9.0",
     "@nx/js": "16.9.0",
     "@nx/linter": "16.9.0",
+    "@nx/rollup": "16.9.0",
     "@nx/workspace": "16.9.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-typescript": "^11.1.4",
+    "@rollup/plugin-wasm": "^6.2.1",
+    "@swc/cli": "~0.1.62",
+    "@swc/core": "~1.3.85",
+    "@swc/jest": "0.2.20",
     "@types/jest": "^29.4.0",
     "@types/node": "18.7.1",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
