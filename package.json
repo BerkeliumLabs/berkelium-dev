@@ -5,8 +5,8 @@
   "scripts": {
     "build:lib": "nx build berkelium",
     "build:wasm": "wasm-pack build --out-dir node_modules/@berkelium/core --target bundler",
-    "test:dev": "nx test berkelium",
-    "test": "npm run build:wasm && npm run test:dev"
+    "test:dev": "npm run build:wasm && npm run test",
+    "test": "nx test berkelium"
   },
   "private": true,
   "dependencies": {
