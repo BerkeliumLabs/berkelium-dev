@@ -18,6 +18,5 @@
     "declarationDir": "dist",
     "types": ["node", "jest"]
   },
-  "include": ["lib/**/*.ts"],
   "exclude": ["node_modules", "tmp", "core"]
 }
