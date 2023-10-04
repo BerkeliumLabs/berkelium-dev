@@ -1,7 +1,7 @@
-import { berkelium } from '../dist/berkelium';
+import * as berkelium from '../dist/cjs/berkelium';
 
 describe('berkelium', () => {
   it('should work', () => {
-    expect(berkelium(1,2)).toEqual(3);
+    expect(berkelium.add_numbers(1, 2)).toEqual(3);
   });
 });
