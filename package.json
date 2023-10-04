@@ -1,6 +1,7 @@
 {
   "name": "berkelium",
-  "version": "0.0.1",
+  "version": "2.0.0",
+  "description": "Berkelium is an open-source ML library writtern in Rust.",
   "license": "MIT",
   "scripts": {
     "build:esm": "wasm-pack build --out-dir dist/esm --target bundler",
@@ -9,8 +10,7 @@
     "build:clean": "rimraf dist",
     "build:all": "npm run build:clean && npm run build:esm && npm run build:cjs && npm run build:web",
     "gulp": "gulp",
-    "test:dev": "npm run build:all && jest ./testing",
-    "test": "jest ./testing",
+    "test": "npm run build:all && jest ./testing",
     "build": "npm run build:all && gulp"
   },
   "main": "cjs/berkelium.js",
@@ -40,6 +40,19 @@
     "tslib": "^2.3.0",
     "typescript": "~5.1.3"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BerkeliumLabs/berkelium-dev.git"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "bugs": {
+    "url": "https://github.com/BerkeliumLabs/berkelium-dev/issues"
+  },
+  "homepage": "https://berkelium.dev",
+  "author": "BerkeliumLabs",
   "overrides": {
     "graceful-fs": "^4.2.11"
   }
