@@ -17,7 +17,6 @@
   "module": "esm/berkelium.js",
   "browser": "web/berkelium.js",
   "types": "types/berkelium.d.ts",
-  "private": true,
   "devDependencies": {
     "@babel/preset-env": "^7.22.20",
     "@types/jest": "^29.4.0",
