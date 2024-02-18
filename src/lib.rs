@@ -1,5 +1,5 @@
 use wasm_bindgen::prelude::*;
-mod calculator;
+mod bkmath;
 
 #[wasm_bindgen]
 extern "C" {
@@ -8,5 +8,5 @@ extern "C" {
 
 #[wasm_bindgen]
 pub fn add_numbers(x: i8, y: i8) -> i8 {
-    return calculator::adding(x, y);
+    return bkmath::adding(x, y);
 }
